@@ -1,0 +1,4 @@
+HUGGINGFACEHUB_ACCESS_TOKEN = "key"
+
+GROQ_API_KEY = "key"
+ 
