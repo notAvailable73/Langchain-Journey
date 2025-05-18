@@ -1,7 +1,6 @@
 from langchain_groq import ChatGroq 
 from dotenv import load_dotenv
-from typing import TypedDict,List
-import getpass
+from typing import TypedDict,List 
 import os
 
 load_dotenv()
@@ -9,13 +8,8 @@ if "GROQ_API_KEY" not in os.environ:
     print("GROQ_API_KEY not found") 
 
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
-    # model="gemma2-9b-it"
-    # other params...
-)
-
- 
-
+    model="llama-3.1-8b-instant", 
+) 
 
 class Movie(TypedDict):
     Release_Date: str
